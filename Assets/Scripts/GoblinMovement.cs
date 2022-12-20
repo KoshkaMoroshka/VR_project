@@ -27,6 +27,11 @@ public class GoblinMovement : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * Speed);
     }
 
+    public Transform GetTarget()
+    {
+        return target;
+    }
+
     public void SetTarget(Transform positionTarget)
     {
         target = positionTarget;
